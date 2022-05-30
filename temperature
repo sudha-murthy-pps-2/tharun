@@ -1,0 +1,10 @@
+# include <stdio.h>
+void main()
+{
+    int cel,far;
+    printf("enter the celesius value:");
+    scanf("%d",&cel);
+    far=(cel-32)*9/5;
+    printf("farenheit value is:%d",far);
+    
+}

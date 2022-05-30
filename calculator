@@ -1,0 +1,31 @@
+# include <stdio.h>
+int main ()
+{
+    int salary,allo,ded,expe,ns,gs,bonous;
+    printf("enter the Basic salary :");
+    scanf("%d",&salary);
+    
+        printf("enter the allowances :");
+    scanf("%d",&allo);
+    
+        printf("enter the deduction :");
+    scanf("%d",&ded);
+
+    printf("enter the experience :");
+    scanf("%d",&expe);
+    
+    gs = salary+allo;
+    ns=gs-ded;
+    
+    if(expe>=3)
+    bonous=ns*3;
+    else
+    if(expe>=2)
+    bonous=ns*2;
+    else
+    bonous=ns;
+    printf("\n grosssalary is :%d",gs);
+    printf("\n netsalary is :%d",ns);
+    printf("\n bonus is :%d",bonous);
+    printf("\n");
+}

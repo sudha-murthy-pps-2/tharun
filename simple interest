@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void main()
+{
+  int p, r,t,si;
+  
+  
+  printf("enter the principal amount :");
+  scanf("%d",& p);
+  
+  printf(" enter the time :");
+  scanf("%d",& t);
+  printf("\n");
+  
+  printf(" enter the rate per annum :");
+  scanf("%d",& r);
+  printf("\n");
+  si=(p*t*r)/100;
+  printf("simple interest rs%d for %d in years %d",p,r,si);
+  
+}

@@ -1,0 +1,38 @@
+# include <stdio.h>
+int main()
+{
+    int c,java,cpp;
+    float avg,total;
+    
+    printf("enter the marks for c programming :");
+    scanf("%d",&c);
+    
+    printf("enter the marks for java programming :");
+    scanf("%d",&java);
+    
+   printf("enter the marks for cpp programming :");
+    scanf("%d",&cpp);
+    
+    total=c+java+cpp;
+    avg=total/3;
+    
+    printf("\ntotal marks is:%.0f",total);
+    printf("\naverage marks is:%.2f",avg);
+    
+    if(avg>=90)
+    printf("\ngrade is a+");
+    else
+    if(avg>=80)
+    printf("\ngrade is a");
+    else
+        if(avg>=70)
+    printf("\ngrade is b+");
+    else
+        if(avg>=60)
+    printf("\ngrade is b");
+    else
+        if(avg>=50)
+    printf("\ngrade is c");
+    else
+    printf("\nfailed...");
+}
